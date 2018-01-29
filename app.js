@@ -29,7 +29,7 @@ T.get('search/tweets', params, (err, data, response) => {
 
       const username = response.user.screen_name;
       const favoritedTweetId = response.id_str;
-      console.log(`Favorited: https://twitter.com/${username}/status/${favoritedTweetId}`);
+      console.log(`Hearted: https://twitter.com/${username}/status/${favoritedTweetId}`);
 
     });
   });
