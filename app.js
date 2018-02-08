@@ -4,7 +4,7 @@ const T = new Twitter(config);
 
 // Set up your count and search parameters
 const params = {
-  q: '#elonmusk',
+  q: '#100daysofcode',
   count: 8,
   result_type: 'recent',
   lang: 'en'
