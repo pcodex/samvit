@@ -35,7 +35,7 @@ const mytweet5 ={
 }
 
 const mytweet6 ={
-  status:'Watch out for the cool new #Android app from our stable'  
+  status:'Watch out for the cool #Android app from our stable'  
 }
 
 //var currentDayNumber = require('current-day-number');
