@@ -13,9 +13,10 @@ const params = {
 T.get('search/tweets', params, (err, data, response) => {
   
     // If there is no error, proceed
-    if(err){
+    if(err){      
       return console.log(err);
-    }
+    }  
+    console.log(data.statuses[0].id_str);
   
     const tweetsId = data.statuses[0].id_str;    
     T.post('statuses/retweet/:id', tweetsId, (err, response) => {
