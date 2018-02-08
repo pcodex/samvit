@@ -1,4 +1,4 @@
-# 100daysofcode-bot
-🤖 A simple Twitter bot to favourite all things #100DaysOfCode.
+# Samvit Twitter Bot
+🤖 A bot for Samvit.
 
-[Ref:](https://medium.com/@ajukco/how-i-built-a-twitter-bot-for-100daysofcode-768ef5e12405)
+[Ref:](http://www.samvit.com.au)
