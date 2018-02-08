@@ -39,6 +39,8 @@ const mytweet6 ={
 }
 
 var dayOfWeek = require('day-of-week').get
+dayOfWeek(new Date(2018, 1, 1), 'America/Los_Angeles');
+
 console.log(dayOfWeek);
 
 const mytweet ={
