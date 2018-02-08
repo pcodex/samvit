@@ -21,17 +21,25 @@ T.get('search/tweets', params, (err, data, response) => {
   const tweetsId = data.statuses
     .map(tweet => ({ id: tweet.id_str }));
 
+  /*
   tweetsId.map(tweetId => {
     T.post('favorites/create', tweetId, (err, response) => {
       if(err){
         return console.log(err[0].message);
-      }
+      }*/
+  
+  tweetsId.map(tweetId => {
+    T.post('statuses/retweet/${tweetId}', (err, response) => {
+      if(err){
+        return console.log(err[0].message);
+    
 
       const username = response.user.screen_name;
       const location = response.user.location;
       //const favoritedTweetId = response.id_str;      
       //console.log(`Liked: https://twitter.com/${username}/status/${favoritedTweetId}`);
-      console.log(`Liked: https://twitter.com/${username} located at ${location}`);
+      //console.log(`Liked: https://twitter.com/${username} located at ${location}`);
+        console.log(`Retweeted: https://twitter.com/${username} located at ${location}`);
 
     });
   });
