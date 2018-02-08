@@ -37,8 +37,12 @@ const mytweet5 ={
 const mytweet6 ={
   status:'Watch out for the cool new #Android app from our stable'  
 }
+
+var cday = currentDayNumber();
+console.log('Current day num is'+cday);
+
 const mytweet ={
-  status:'Testing in'  
+  status:'Yo man in'  
 }
 
 T.post('statuses/update', mytweet, (err, response) => {
