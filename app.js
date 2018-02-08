@@ -39,11 +39,24 @@ const mytweet6 ={
 }
 
 var currentDayNumber = require('current-day-number');
-console.log('Current day num is'+currentDayNumber());
+console.log('Current day num is '+currentDayNumber());
 
-const mytweet ={
-  status:'Yo man in'  
-}
+var mytweet;
+if(currentDayNumber() %7 == 0)
+  mytweet = mytweet0;
+if(currentDayNumber() %7 == 1)
+  mytweet = mytweet1;
+if(currentDayNumber() %7 == 2)
+  mytweet = mytweet2;
+if(currentDayNumber() %7 == 3)
+  mytweet = mytweet3;
+if(currentDayNumber() %7 == 4)
+  mytweet = mytweet4;
+if(currentDayNumber() %7 == 5)
+  mytweet = mytweet5;
+if(currentDayNumber() %7 == 6)
+  mytweet = mytweet6;
+
 
 T.post('statuses/update', mytweet, (err, response) => {
   
