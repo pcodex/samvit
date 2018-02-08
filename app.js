@@ -3,12 +3,30 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 // Set up your count and search parameters
+/*
 const params = {
   q: '#elonmusk',  
   result_type: 'recent',
   lang: 'en'
+}*/
+
+const mytweet ={
+  status:'Watch%20out%20for%20the%20next%20cool%20Android%20app%20from%20our%20stable'  
 }
 
+T.post('statuses/update', mytweet, (err, response) => {
+  
+        if(err){
+           return console.log('Post failed : '+err[0].message);
+        }
+      const username = response.user.name;
+      const followerscnt = response.followers_count;
+      //const favoritedTweetId = response.id_str;
+      console.log(`Your name:`+username);
+      console.log(`Your follower count:`+followerscnt);
+    });
+
+/*
 // Initiate your search using the above paramaters
 T.get('search/tweets', params, (err, data, response) => {
   
@@ -30,7 +48,7 @@ T.get('search/tweets', params, (err, data, response) => {
     });
   
 });
-
+*/
 
 
       
