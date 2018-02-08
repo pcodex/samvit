@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "twitter": "^1.7.1",
-    "current-day-number": "^1.0.6"
+    "current-day-number": "^1.0.6",
+    "hours":"^0.1.0"
   },
   "devDependencies": {},
   "scripts": {
