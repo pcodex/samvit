@@ -43,20 +43,34 @@ var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
 var mytweet;
-if(currentHour('today') > 18)
+if(currentHour('today') > 18){
+  console.log('In 18');
   mytweet = mytweet0;
-else if(currentHour('today') > 16)
+}
+else if(currentHour('today') > 16){
+  console.log('In 16');
   mytweet = mytweet1;
-else if(currentHour('today') > 14)
+}
+else if(currentHour('today') > 14){
+  console.log('In 14');
   mytweet = mytweet2;
-else if(currentHour('today') > 12)
+}
+else if(currentHour('today') > 12){
+  console.log('In 12');
   mytweet = mytweet3;
-else if(currentHour('today') > 10)
+}
+else if(currentHour('today') > 10){
+  console.log('In 10');
   mytweet = mytweet4;
-else if(currentHour('today') > 9)
+}
+else if(currentHour('today') > 9){
+  console.log('In 9');
   mytweet = mytweet5;
-else(currentHour('today') > 8)
+}
+else(currentHour('today') > 8){
+  console.log('In 8');
   mytweet = mytweet6;
+}
 
 
 T.post('statuses/update', mytweet, (err, response) => {
