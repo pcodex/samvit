@@ -28,8 +28,8 @@ T.get('search/tweets', params, (err, data, response) => {
       }
 
       const username = response.user.screen_name;
-      const favoritedTweetId = response.id_str;
-      console.log(`Retweeted: https://twitter.com/${username}/status/${favoritedTweetId}`);
+      //const favoritedTweetId = response.id_str;
+      console.log(`Retweeted: https://twitter.com/${username}`);
 
     });
   });
