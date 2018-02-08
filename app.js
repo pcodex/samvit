@@ -37,12 +37,6 @@ const mytweet5 ={
 const mytweet6 ={
   status:'Watch out for the cool new #Android app from our stable'  
 }
-
-var dayOfWeek = require('day-of-week').get
-dayOfWeek(new Date(2018, 2, 8), 'Australia/Melbourne');
-
-console.log(dayOfWeek);
-
 const mytweet ={
   status:'Testing in'  
 }
