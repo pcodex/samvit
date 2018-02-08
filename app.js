@@ -40,6 +40,7 @@ const mytweet6 ={
 
 //var currentDayNumber = require('current-day-number');
 var currentHour = require('hours');
+console.log('Current Hour '+currentHour('today'));
 
 var mytweet;
 if(currentHour('today') > 10 && currentHour('today') <= 12 )
