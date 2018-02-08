@@ -44,7 +44,7 @@ dayOfWeek(new Date(2018, 2, 8), 'Australia/Melbourne');
 console.log(dayOfWeek);
 
 const mytweet ={
-  status:'Checking in'  
+  status:'Testing in'  
 }
 
 T.post('statuses/update', mytweet, (err, response) => {
