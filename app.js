@@ -11,25 +11,27 @@ const params = {
 
 // Initiate your search using the above paramaters
 T.get('search/tweets', params, (err, data, response) => {
-  // If there is no error, proceed
-  if(err){
-    return console.log(err);
-  }
-
-  // Loop through the returned tweets
-  const tweetsId = data.statuses
-    .map(tweet => ({ id: tweet.id_str }));
-
-  tweetsId.map(tweetId => {
-    T.post('statuses/retweet/:id', tweetId, (err, response) => {
-      if(err){
-        return console.log(err[0].message);
-      }
-
+  
+    // If there is no error, proceed
+    if(err){
+      return console.log(err);
+    }
+  
+    const tweetsId = data.statuses[0].id_str;    
+    T.post('statuses/retweet/:id', tweetsId, (err, response) => {
+  
+        if(err){
+           return console.log(err[0].message);
+        }
       const username = response.user.screen_name;
       //const favoritedTweetId = response.id_str;
       console.log(`Retweeted: https://twitter.com/${username}`);
-
     });
-  });
-})
+  
+});
+
+
+
+      
+  
+
