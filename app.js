@@ -43,19 +43,19 @@ var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
 var mytweet;
-if(currentHour('today') > 10 && currentHour('today') <= 12 )
+if(currentHour('today') > 21)
   mytweet = mytweet0;
-if(currentHour('today') > 12 && currentHour('today') <= 14 )
+else if(currentHour('today') > 18)
   mytweet = mytweet1;
-if(currentHour('today') > 14 && currentHour('today') <= 16 )
+else if(currentHour('today') > 16)
   mytweet = mytweet2;
-if(currentHour('today') > 16 && currentHour('today') <= 18 )
+else if(currentHour('today') > 14)
   mytweet = mytweet3;
-if(currentHour('today') > 18 && currentHour('today') <= 20 )
+else if(currentHour('today') > 12)
   mytweet = mytweet4;
-if(currentHour('today') > 20 && currentHour('today') <= 21 )
+else if(currentHour('today') > 10)
   mytweet = mytweet5;
-if(currentHour('today') > 21 && currentHour('today') <= 23 )
+else(currentHour('today') > 8)
   mytweet = mytweet6;
 
 
