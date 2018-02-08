@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "twitter": "^1.7.1"
+    "day-of-week":"^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
