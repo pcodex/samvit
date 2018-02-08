@@ -27,7 +27,7 @@ const mytweet3 ={
 }
 
 const mytweet4 ={
-  status:'The most elegant #UXdesign isthe simplest and most intuitive. Less is more at #Samvit'
+  status:'The most elegant #UXdesign is the simplest and most intuitive. Less is more at #Samvit'
 }
 
 const mytweet5 ={
@@ -38,23 +38,23 @@ const mytweet6 ={
   status:'Watch out for the cool new #Android app from our stable'  
 }
 
-var currentDayNumber = require('current-day-number');
-console.log('Current day num is '+currentDayNumber());
+//var currentDayNumber = require('current-day-number');
+var currentHour = require('hours');
 
 var mytweet;
-if(currentDayNumber() %7 == 0)
+if(currentHour('today') > 10 && currentHour('today') <= 12 )
   mytweet = mytweet0;
-if(currentDayNumber() %7 == 1)
+if(currentHour('today') > 12 && currentHour('today') <= 14 )
   mytweet = mytweet1;
-if(currentDayNumber() %7 == 2)
+if(currentHour('today') > 14 && currentHour('today') <= 16 )
   mytweet = mytweet2;
-if(currentDayNumber() %7 == 3)
+if(currentHour('today') > 16 && currentHour('today') <= 18 )
   mytweet = mytweet3;
-if(currentDayNumber() %7 == 4)
+if(currentHour('today') > 18 && currentHour('today') <= 20 )
   mytweet = mytweet4;
-if(currentDayNumber() %7 == 5)
+if(currentHour('today') > 20 && currentHour('today') <= 21 )
   mytweet = mytweet5;
-if(currentDayNumber() %7 == 6)
+if(currentHour('today') > 21 && currentHour('today') <= 23 )
   mytweet = mytweet6;
 
 
