@@ -28,10 +28,10 @@ T.get('search/tweets', params, (err, data, response) => {
       }
 
       const username = response.user.screen_name;
-      //const location = response.user.location;
+      const location = response.user.location;
       //const favoritedTweetId = response.id_str;      
       //console.log(`Liked: https://twitter.com/${username}/status/${favoritedTweetId}`);
-      //console.log(`Liked: https://twitter.com/${username} located at ${location}`);
+      console.log(`Liked: https://twitter.com/${username} located at ${location}`);
 
     });
   });
