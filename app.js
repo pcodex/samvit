@@ -4,8 +4,7 @@ const T = new Twitter(config);
 
 // Set up your count and search parameters
 const params = {
-  q: '#elonmusk',
-  count: 8,
+  q: '#elonmusk',  
   result_type: 'recent',
   lang: 'en'
 }
