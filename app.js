@@ -38,8 +38,8 @@ const mytweet6 ={
   status:'Watch out for the cool new #Android app from our stable'  
 }
 
-var cday = currentDayNumber();
-console.log('Current day num is'+cday);
+var currentDayNumber = require('current-day-number');
+console.log('Current day num is'+currentDayNumber());
 
 const mytweet ={
   status:'Yo man in'  
