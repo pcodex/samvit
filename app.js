@@ -19,7 +19,7 @@ const mytweet1 ={
 }
 
 const mytweet2 ={
-  status:'Getting into the nuts and bolts of #Multithreading with #cplusplus'  
+  status:'Getting into the nuts and bolts of #Multithreading with C++11 #cplusplus'  
 }
 
 const mytweet3 ={
@@ -43,12 +43,12 @@ var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
 var mytweet;
-if(currentHour('today') > 18){
-  console.log('In 18');
+if(currentHour('today') > 22){
+  console.log('In 22');
   mytweet = mytweet0;
 }
-else if(currentHour('today') > 16){
-  console.log('In 16');
+else if(currentHour('today') > 18){
+  console.log('In 18');
   mytweet = mytweet1;
 }
 else if(currentHour('today') > 14){
@@ -80,6 +80,4 @@ T.post('statuses/update', mytweet, (err, response) => {
         }
       const username = response.user.screen_name;      
       console.log(`Your name:`+username);      
-    });   
-  
-
+    });
