@@ -11,7 +11,7 @@ const params = {
 }*/
 
 const mytweet ={
-  status:'Watch out for the cool new Android app from out stable'  
+  status:'Watch out for the cool new #Android app from our stable'  
 }
 
 T.post('statuses/update', mytweet, (err, response) => {
