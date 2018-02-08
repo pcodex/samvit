@@ -4,7 +4,7 @@ const T = new Twitter(config);
 
 // Set up your count and search parameters
 const params = {
-  q: '#software, #100daysofcode, #innovation',
+  q: '#software OR #100daysofcode OR #innovation',
   count: 4,
   result_type: 'recent',
   lang: 'en'
@@ -32,6 +32,7 @@ T.get('search/tweets', params, (err, data, response) => {
     T.post('statuses/retweet/:id', tweetId, (err, response) => {
       if(err){
         return console.log(err[0].message);    
+      }
 
       const username = response.user.screen_name;
       const location = response.user.location;
@@ -42,3 +43,4 @@ T.get('search/tweets', params, (err, data, response) => {
 
     });
   });
+})
