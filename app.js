@@ -22,7 +22,7 @@ T.get('search/tweets', params, (err, data, response) => {
     T.post('statuses/retweet/:id', tweetsId, (err, response) => {
   
         if(err){
-           return console.log('Retweet failed : '+err);
+           return console.log('Retweet failed : '+err[0].message);
         }
       const username = response.user.screen_name;
       //const favoritedTweetId = response.id_str;
