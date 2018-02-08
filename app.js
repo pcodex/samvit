@@ -67,7 +67,7 @@ else if(currentHour('today') > 9){
   console.log('In 9');
   mytweet = mytweet5;
 }
-else(currentHour('today') > 8){
+else if (currentHour('today') > 8){
   console.log('In 8');
   mytweet = mytweet6;
 }
