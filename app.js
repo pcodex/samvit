@@ -23,11 +23,11 @@ const mytweet2 ={
 }
 
 const mytweet3 ={
-  status:'The Phoenix Project is a must read for all #Devops and #SoftwareEngineer at #Samvit'  
+  status:'Quicker and smaller deployments should be the norm and not just with unicorns but behemoths too #DevOps'  
 }
 
 const mytweet4 ={
-  status:'The most elegant #UXdesign is the simplest and most intuitive. Less is more at #Samvit'
+  status:'Less code means less defects but readability before brevity #softwaredevelopment'
 }
 
 const mytweet5 ={
@@ -35,7 +35,7 @@ const mytweet5 ={
 }
 
 const mytweet6 ={
-  status:'Watch out for the cool #Android app from our stable'  
+  status:'Always keep in touch with the customer and get the big picture #LeanStartUp'  
 }
 
 //var currentDayNumber = require('current-day-number');
