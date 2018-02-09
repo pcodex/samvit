@@ -15,11 +15,11 @@ const mytweet0 ={
 }
 
 const mytweet1 ={
-  status:'Working hard on the #UXDesign for a client website'  
+  status:'Is #Apple setting the pace for a dumber human race? #UXdesign'  
 }
 
 const mytweet2 ={
-  status:'Getting into the nuts and bolts of #Multithreading with C++11 #cplusplus'  
+  status:'Does writing lock free code using #atomic sound easier than using locks #Multithreading #cplusplus'  
 }
 
 const mytweet3 ={
