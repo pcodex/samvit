@@ -2,14 +2,6 @@ const Twitter = require('twitter');
 const config = require('./config.js');
 const T = new Twitter(config);
 
-// Set up your count and search parameters
-/*
-const params = {
-  q: '#elonmusk',  
-  result_type: 'recent',
-  lang: 'en'
-}*/
-
 const mytweet0 ={
   status:'The sun never sets at Samvit'  
 }
@@ -42,7 +34,7 @@ const mytweet6 ={
 var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
-const mytweet=mytweet4;
+var mytweet=mytweet4;
 if(currentHour('today') > 22){
   console.log('In 22');
   mytweet = mytweet0;
