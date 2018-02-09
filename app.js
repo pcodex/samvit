@@ -42,7 +42,7 @@ const mytweet6 ={
 var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
-var mytweet;
+
 if(currentHour('today') > 22){
   console.log('In 22');
   mytweet = mytweet0;
@@ -70,7 +70,7 @@ else if(currentHour('today') > 9){
 else if (currentHour('today') > 8){
   console.log('In 8');
   mytweet = mytweet6;
-}
+};
 
 
 T.post('statuses/update', mytweet, (err, response) => {
