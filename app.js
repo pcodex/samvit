@@ -42,7 +42,7 @@ const mytweet6 ={
 var currentHour = require('hours');
 console.log('Current Hour '+currentHour('today'));
 
-
+const mytweet=mytwee4;
 if(currentHour('today') > 22){
   console.log('In 22');
   mytweet = mytweet0;
