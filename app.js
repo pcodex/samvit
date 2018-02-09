@@ -64,7 +64,7 @@ else if (currentHour('today') > 8){
   mytweet = mytweet6;
 };
 
-
+console.log('Tweet is '+mytweet;
 T.post('statuses/update', mytweet, (err, response) => {
   
         if(err){
