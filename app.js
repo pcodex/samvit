@@ -59,12 +59,12 @@ else if(currentHour('today') > 9){
   console.log('In 9');
   mytweet = mytweet5;
 }
-else if (currentHour('today') > 8){
+else {
   console.log('In 8');
   mytweet = mytweet6;
 }
 
-console.log('Tweet is '+mytweet);
+console.log('Tweet is '+mytweet.status);
 T.post('statuses/update', mytweet, (err, response) => {
   
         if(err){
