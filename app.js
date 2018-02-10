@@ -7,27 +7,27 @@ const mytweet0 ={
 }
 
 const mytweet1 ={
-  status:'Is #Apple setting the pace for a dumber human race? #UXdesign'  
+  status:'#Android. Why are Tab Layouts so confusing to implement? A TabSelected listener, TabPageChange listener, Page Adapters, Fragments and what not'
 }
 
 const mytweet2 ={
-  status:'Does writing lock free code using #atomic sound easier than using locks #Multithreading #cplusplus'  
+  status:'Move away from process oriented reviews to automated testing and greater accountability #LeanStartup #DevOps'  
 }
 
 const mytweet3 ={
-  status:'Quicker and smaller deployments should be the norm and not just with unicorns but behemoths too #DevOps'  
+  status:'Reduce WIP is the mantra at #Samvit. Efficiency and throughput increase when you do not multitask #LeanStartup'  
 }
 
 const mytweet4 ={
-  status:'Less code means less defects but readability before brevity #softwaredevelopment'
+  status:'Sustain the flow of work, get frequent and pointed feedback and innovate. The 3-fold path recommended in The Phoenix Project #LeanStartup'
 }
 
 const mytweet5 ={
-  status:'Would the #web exist today without #cpluscplus.....we need real #SoftwareEngineers here at Samvit'
+  status:'Repetition and practice lead to mastery and efficiency #LeanStartup'
 }
 
 const mytweet6 ={
-  status:'Always keep in touch with the customer and get the big picture #LeanStartUp'  
+  status:'Make a small improvement every day #Toyota #LeanStartup'  
 }
 
 //var currentDayNumber = require('current-day-number');
