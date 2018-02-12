@@ -3,64 +3,65 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const mytweet0 ={
-  status:'The sun never sets at Samvit'  
+  status:'Books prescribed for engineers at #Samvit.Personal #Kanban:Mapping Work|Navigating Life by Jim Benson and Tonianne DeMaria Barry'  
 }
 
 const mytweet1 ={
-  status:'#Android. Why are Tab Layouts so confusing to implement? A TabSelected listener, TabPageChange listener, Page Adapters, Fragments and what not'
+  status:'Books prescribed for engineers at #Samvit. 1)The Goal : A Process of Ongoing Improvement by Eliyahu Goldratt a must read for efficient #SoftwareDevelopment'
 }
 
 const mytweet2 ={
-  status:'Move away from process oriented reviews to automated testing and greater accountability #LeanStartup #DevOps'  
+  status:'Books prescribed for engineers at #Samvit. 2)The Five Dysfunctions of a Team : A Leadership Fable by Patrick Lencioni #LeanStartup #DevOps #SoftwareDevelopment'
 }
 
 const mytweet3 ={
-  status:'Reduce WIP is the mantra at #Samvit. Efficiency and throughput increase when you do not multitask #LeanStartup'  
+  status:'Books prescribed for engineers at #Samvit. 3)Toyota Kata:Managing People for Improvement, Adaptiveness and Superior Results by Mike Rother #LeanStartup'  
 }
 
 const mytweet4 ={
-  status:'Sustain the flow of work, get frequent and pointed feedback and innovate. The 3-fold path recommended in The Phoenix Project #LeanStartup'
+  status:'Books prescribed for engineers at #Samvit. Cont Delivery:Reliable SW Releases through Build, Test and Deployment Automation by Jez Humble and Davide Farley #DevOps'
 }
 
 const mytweet5 ={
-  status:'Repetition and practice lead to mastery and efficiency #LeanStartup'
+  status:'Books prescribed for engineers at #Samvit. Release It!Design and Deploy Production Ready Software by Michael Nygard #DevOps'
 }
 
 const mytweet6 ={
-  status:'Make a small improvement every day #Toyota #LeanStartup'  
+  status:'Books prescribed for engineers at #Samvit. Kanban:Successful Evolutionary Change for your Tech Business by David Anderson #Kanban'  
 }
 
-//var currentDayNumber = require('current-day-number');
-var currentHour = require('hours');
-console.log('Current Hour '+currentHour('today'));
+var currentDayNumber = require('current-day-number');
+//var currentHour = require('hours');
+console.log('Current Day Number '+currentDayNumber());
+var cd = currentDayNumber()%7;
 
-var mytweet=mytweet4;
-if(currentHour('today') > 22){
-  console.log('In 22');
+var mytweet=mytweet0;
+if(cd >= 0){
+  console.log('In 0');
   mytweet = mytweet0;
 }
-else if(currentHour('today') > 18){
-  console.log('In 18');
+else if(cd >= 1){
+  console.log('In 1');
   mytweet = mytweet1;
 }
-else if(currentHour('today') > 14){
-  console.log('In 14');
+else if(cd >= 2){
+  console.log('In 2');
   mytweet = mytweet2;
 }
-else if(currentHour('today') > 12){
-  console.log('In 12');
+else if(cd >= 3){
+  console.log('In 3');
   mytweet = mytweet3;
 }
-else if(currentHour('today') > 10){
-  console.log('In 10');
+else if(cd >= 4){
+  console.log('In 4');
   mytweet = mytweet4;
 }
-else if(currentHour('today') > 9){
-  console.log('In 9');
+else if(cd >= 5){
+  console.log('In 5');
   mytweet = mytweet5;
 }
 else {
-  console.log('In 8');
+  console.log('In 6');
   mytweet = mytweet6;
 }
 
