@@ -3,7 +3,7 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const mytweet0 ={
-  status:'Books prescribed for engineers at #Samvit.Personal #Kanban:Mapping Work|Navigating Life by Jim Benson and Tonianne DeMaria Barry'  
+  status:'Books prescribed for engineers at #Samvit. Personal #Kanban : Mapping Work|Navigating Life by Jim Benson and Tonianne DeMaria Barry'  
 }
 
 const mytweet1 ={
@@ -36,27 +36,27 @@ console.log('Current Day Number '+currentDayNumber());
 var cd = currentDayNumber()%7;
 
 var mytweet=mytweet0;
-if(cd >= 0){
+if(cd == 0){
   console.log('In 0');
   mytweet = mytweet0;
 }
-else if(cd >= 1){
+else if(cd == 1){
   console.log('In 1');
   mytweet = mytweet1;
 }
-else if(cd >= 2){
+else if(cd == 2){
   console.log('In 2');
   mytweet = mytweet2;
 }
-else if(cd >= 3){
+else if(cd == 3){
   console.log('In 3');
   mytweet = mytweet3;
 }
-else if(cd >= 4){
+else if(cd == 4){
   console.log('In 4');
   mytweet = mytweet4;
 }
-else if(cd >= 5){
+else if(cd == 5){
   console.log('In 5');
   mytweet = mytweet5;
 }
