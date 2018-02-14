@@ -37,31 +37,31 @@ var cd = currentDayNumber()%7;
 
 var mytweet=mytweet0;
 if(cd == 0){
-  console.log('In 0');
+  console.log('In d0');
   mytweet = mytweet0;
 }
 else if(cd == 1){
-  console.log('In 1');
+  console.log('In d1');
   mytweet = mytweet1;
 }
 else if(cd == 2){
-  console.log('In 2');
+  console.log('In d2');
   mytweet = mytweet2;
 }
 else if(cd == 3){
-  console.log('In 3');
+  console.log('In d3');
   mytweet = mytweet3;
 }
 else if(cd == 4){
-  console.log('In 4');
+  console.log('In d4');
   mytweet = mytweet4;
 }
 else if(cd == 5){
-  console.log('In 5');
+  console.log('In d5');
   mytweet = mytweet5;
 }
 else {
-  console.log('In 6');
+  console.log('In d6');
   mytweet = mytweet6;
 }
 
