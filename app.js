@@ -3,31 +3,31 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const mytweet0 ={
-  status:'Books prescribed for engineers at #Samvit. Personal #Kanban : Mapping Work|Navigating Life by Jim Benson and Tonianne DeMaria Barry'  
+  status:'Books prescribed for #Softwareengineers at #Samvit. 8) Code Complete: A Practical Handbook of Software Construction Steve McConnell #books #software'  
 }
 
 const mytweet1 ={
-  status:'Books prescribed for engineers at #Samvit. 1)The Goal : A Process of Ongoing Improvement by Eliyahu Goldratt a must read for efficient #SoftwareDevelopment'
+  status:'Books prescribed for #Softwareengineers at #Samvit. 9) The Pragmatic Programmer: From Journeyman to Master Andrew Hunt #books #software'
 }
 
 const mytweet2 ={
-  status:'Books prescribed for engineers at #Samvit. 2)The Five Dysfunctions of a Team : A Leadership Fable by Patrick Lencioni #LeanStartup #DevOps #SoftwareDevelopment'
+  status:'Books prescribed for #Softwareengineers at #Samvit. 10) Structure and Interpretation of Computer Programs Harold Abelson #books #software'
 }
 
 const mytweet3 ={
-  status:'Books prescribed for engineers at #Samvit. 3)Toyota Kata:Managing People for Improvement, Adaptiveness and Superior Results by Mike Rother #LeanStartup'  
+  status:'Books prescribed for #Softwareengineers at #Samvit. 11) Refactoring: Improving the Design of Existing Code Martin Fowler #books #software'
 }
 
 const mytweet4 ={
-  status:'Books prescribed for engineers at #Samvit. Cont Delivery:Reliable SW Releases through Build, Test and Deployment Automation by Jez Humble and Davide Farley #DevOps'
+  status:'Books prescribed for #Softwareengineers at #Samvit. 12) Clean Code: A Handbook of Agile Software Craftsmanship Robert C Martin #books #software'
 }
 
 const mytweet5 ={
-  status:'Books prescribed for engineers at #Samvit. Release It!Design and Deploy Production Ready Software by Michael Nygard #DevOps'
+  status:'Books prescribed for #Softwareengineers at #Samvit. 13) Programming Pearls (2nd Edition) Jon Bentley #books #software'
 }
 
 const mytweet6 ={
-  status:'Books prescribed for engineers at #Samvit. Kanban:Successful Evolutionary Change for your Tech Business by David Anderson #Kanban'  
+  status:'Books prescribed for #Softwareengineers at #Samvit. 14) Code: The Hidden Language of Computer Hardware and Software Charles Petzold #books #software'  
 }
 
 var currentDayNumber = require('current-day-number');
